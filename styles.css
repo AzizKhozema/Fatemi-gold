@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    font-size: 1vw;
+}
+
+.loginpage {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.mainpage {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.imgcontainer {
+
+    flex:1;
+    background: url(Asset/cover\ photo.jpeg) no-repeat right ;
+    background-size: contain;
+
+}
+
+.imgcover {
+    visibility: hidden;
+}
+
+
+.logincontainer { 
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: #ffffff;
+    flex-wrap: wrap;
+    
+}
+
+.loginform {
+    margin: 0px 0px 0px 0px;
+    justify-content: start;
+    width: 350px;
+    background-color: antiquewhite;
+    height: 500px;
+    align-items: center ;
+    border: 2px grey solid ;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.logocontainer {
+    padding: 50px;
+    padding-top: 40px;
+}
+
+.usernamel {
+    padding: 5px;
+    font-size: small;
+    color: gray;
+}
+
+.passwordl {
+    padding: 5px 5px 5px 5px;
+    padding-top: 0px;
+    font-size: small;
+    color: gray;
+}
+
+input {
+    font-size: 14px;
+    width: 300px;
+    height: 40px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+span {
+    font-size: 12px;
+    padding: 0px 0px 0px 10px;
+    
+
+}
+/* Hide span when input is focused or has text */
+input:focus + span,
+input:not(:placeholder-shown) + span  {
+    opacity: 0;
+}
+
+input:not(:placeholder-shown) {
+    padding: 0px 0px 0px 10px;
+    
+    
+}
+
+.loginbutton {
+    width: 300px;
+    height: 40px;
+    background: #0c79d2;
+    color: white;
+    border-radius: 5px;
+    border: 1px gray solid;
+    margin: 10px;
+}
+.spanlogin {
+    padding: 0;
+    font-size: larger;
+}
+
+.-or- {
+    padding-top: 20px;
+}
+
+.line1 {
+    border-bottom: 2px gray solid;
+    width: 80px;
+}
+
+.spanor {
+    padding: 8px;
+}
+
+.line2 {
+    border-bottom: 2px gray solid;
+    width: 80px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    flex: 0;
+    display: flex;
+    height: 100px;
+    color: #000000;
+    background: #ffffff;
+    align-content: center;
+    justify-content: center;
+
+}
+
+p {
+    height: 100px;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+/* Index.html */
+.mainpageh {
+    background-color: #dde6ef;
+
+}
+
+.mainnav {
+    width: 18vw;
+    height: 100vh;
+    padding: .7vw;
+    background-color: #dde6ef;
+
+}
+
+.logobar {
+    width: 18vw;
+    height: 15vh;
+    
+    
+}
+.logobar img {
+    width: 15vw;
+}
+
+.menubar {
+    width: 18vw;
+    height: 76vh;
+    overflow-y: scroll;
+}
+
+.rectab {
+    width: 15vw;
+    height: 28vh;
+    padding: .5vw;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.menutab {
+    width: 18vw;
+    margin-top:5px ;
+    padding-top: 10px;
+    overflow: scroll;
+}
+
+.menutab .tab {
+    display: flex;
+    width: 15vw;
+    padding: 8px;
+    padding-left: 15px;
+    margin: 3px 0;
+    border-radius: 10px;
+    border: 2px solid #ffffffa0;
+
+}
+
+.menutab .tab:hover {
+    padding-left: 25px;
+    background-color: #9fbbd6;
+    cursor: pointer;
+    box-shadow: 0px 1px 10px 0.5px #6c6e70;
+    transition: padding-left .3s ease-in-out, background-color .2s ease-in-out, box-shadow .2s ease-in-out;
+}
+
+
+
+.settab {
+    width: 15vw;
+    gap: 30px;
+    position: absolute;
+    bottom: .7vw;
+}
+
+.settab img {
+    width: 2.5vw;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.settab img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    background-color: #9fbbd6;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.maindiv {
+    margin: .7vw;
+    margin-left: 0;
+    width: calc( 100vw - 18vw);
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+
+
+
+
+
+/* extra */
+.jsct {
+    justify-content: center;
+}
+
+*::-webkit-scrollbar {
+    width: 0px;;
+    background-color: #dde6ef;
+}
+
+*::-webkit-scrollbar-thumb {
+    width: 7px;
+    background-color: #dde6ef;
+    border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.algitmcen{
+    align-items: center;
+}
+
+.algslfcen {
+    align-content: center;
+}
+
+.abs {
+    position: absolute;
+}
+
+.disflex {
+    display: flex;
+}
+
+.flecol{
+    flex-direction: column;
+}
+
+.w {
+    width: 100px;
+}
+
+.fcol {
+    flex-direction: column;
+}
+
+.frow {
+    flex-direction: row;
+}
+
+
+
+
